@@ -5,9 +5,9 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "caches_method"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "michael@tennmandigital.com"
+    gem.summary = %Q{A tiny little ActiveRecord plugin to cache method results.}
+    gem.description = %Q{An ActiveRecord plugin to cache method results in the Rails cache.}
+    gem.email = "mpd@jesters-court.net"
     gem.homepage = "http://github.com/xxx/caches_method"
     gem.authors = ["mpd"]
     gem.add_development_dependency "rspec"
@@ -34,16 +34,3 @@ task :spec => :check_dependencies
 
 task :default => :spec
 
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  if File.exist?('VERSION')
-    version = File.read('VERSION')
-  else
-    version = ""
-  end
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "caches_method #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end
