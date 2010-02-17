@@ -6,16 +6,16 @@ An quick 'n' dirty ActiveRecord plugin to easily handle caching of method result
 SYNOPSIS
 ========
 
-class AwesomeThing < ActiveRecord::Base
-  def slow_method
-    # do slow stuff.
-  end
+    class AwesomeThing < ActiveRecord::Base
+      def slow_method
+        # do slow stuff.
+      end
   
-  caches_method :slow_method
+      caches_method :slow_method
 
-  # extra args are passed to Rails.cache.write, e.g.
-  # caches_method :slow_method, :expires_in => 30.minutes
-end
+      # extra args are passed to Rails.cache.write, e.g.
+      # caches_method :slow_method, :expires_in => 30.minutes
+    end
 
 
 REQUIREMENTS
