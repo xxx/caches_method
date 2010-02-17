@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.md",
      "Rakefile",
      "VERSION",
+     "caches_method.gemspec",
      "lib/caches_method.rb",
      "spec/caches_method_spec.rb",
      "spec/spec_helper.rb"
