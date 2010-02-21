@@ -31,7 +31,7 @@ INSTALLATION
     sudo gem install caches_method
 
 then in your environment.rb:
-    config.gem 'caches_method', :source => 'http://gemcutter.org'
+    config.gem 'caches_method', :source => 'http://rubygems.org'
     
 TODO
 ====
